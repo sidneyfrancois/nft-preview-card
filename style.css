@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --primary-soft-blue-gradient: hsl(215, 51%, 70%, 0.2);
+
+  --neutral-main-dark-blue: hsl(217, 54%, 11%);
+  --neutral-card-dark-blue: hsl(216, 50%, 16%);
+  --neutral-line-dark-blue: hsl(215, 32%, 27%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--neutral-main-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  background-color: var(--neutral-card-dark-blue);
+  padding: 1.8rem;
+  --border-radius-default: 20px;
+  border-radius: 20px;
+  max-width: 350px;
+  color: var(--primary-soft-blue);
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: var(--neutral-white);
+  font-weight: 600;
+}
+
+.value-time {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--primary-soft-blue-gradient);
+}
+
+.info-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ethereum-value {
+  color: var(--primary-cyan);
+  font-weight: 400;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author span {
+  color: var(--neutral-white);
+}
+
+.author img {
+  width: 2rem;
+  border: 1px solid var(--neutral-white);
+  border-radius: 50%;
+}
